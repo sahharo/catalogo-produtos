@@ -1,0 +1,79 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Cores rosinha claro */
+  color-scheme: light;
+  color: #3d3d3d;
+  background-color: #ffe4f2;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffe4f2;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #d63384; /* Rosa escuro */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b0256b;
+}
+
+/* Títulos */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #d63384;
+}
+
+/* Botões */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffb6d9; /* Rosa claro */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+  background-color: #ff94c2;
+  border-color: #d63384;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Modo claro (forçado) */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #3d3d3d;
+    background-color: #ffe4f2;
+  }
+
+  a:hover {
+    color: #b0256b;
+  }
+
+  button {
+    background-color: #ffb6d9;
+  }
+}
